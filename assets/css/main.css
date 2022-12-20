@@ -1,0 +1,56 @@
+/* alfa-slab-one-regular - latin */
+@font-face {
+  font-family: 'Alfa Slab One';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/alfa-slab-one-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/alfa-slab-one-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* chivo-mono-regular - latin */
+@font-face {
+  font-family: 'Chivo Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/chivo-mono-v4-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/chivo-mono-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* fonts */
+h1, h2, h3, h4, h5, h6, nav a  {
+  font-family: 'Alfa Slab One';
+}
+p, a {
+  font-family: 'Chivo Mono';
+}
+
+
+.hero {
+  background-image: url(/assets/images/Neil-paper-crumple.jpg);
+  background-size: cover;
+  background-position: 50%;
+  filter: grayscale(60%);
+}
+
+/* theme-color */
+
+
+
+
+.bg-green {
+  background-color: #475855;
+}
+.bg-tech-react {
+  background-color: #61DBFB;
+}
+.bg-tech-dotnet {
+  background-color: #5c2d91;
+}
