@@ -18,39 +18,158 @@
        url('../fonts/chivo-mono-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Color Palettes */
+:root {
+  --dracula-orchid: #2c3639;
+  --rocky-creek: #3f4e4f;
+  --solitary-state: #c2c8c6;
+  --mud-ball: #966644;
+  --sassafras-tea: #dcd7c9;
+  --white-chalk: #f6f5f1;
+}
+
+/* Colored Classes */
+.bg-do {
+  background-color: var(--dracula-orchid);
+}
+.bg-rc {
+  background-color: var(--rocky-creek);
+}
+.bg-ss {
+  background-color: var(--solitary-state);
+}
+.bg-mb {
+  background-color: var(--mud-ball);
+}
+.bg-st {
+  background-color: var(--sassafras-tea);
+}
+.bg-wc {
+  background-color: var(--sassafras-tea);
+}
+.text-light {
+  color: var(--white-chalk)
+}
+.text-dark {
+  color: var(--dracula-orchid)
+}
+.border-light {
+  border-color: var(--white-chalk);
+}
+.border-dark {
+  border-color: var(--dracula-orchid);
+}
+
+/* Default */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-/* fonts */
-h1, h2, h3, h4, h5, h6, nav a  {
-  font-family: 'Alfa Slab One';
-}
-p, a {
   font-family: 'Chivo Mono';
 }
 
+/* Fonts */
+h1, h2, h3, h4, h5, h6, nav a  {
+  font-family: 'Alfa Slab One';
+}
 
-.hero {
-  background-image: url(/assets/images/Neil-paper-crumple.jpg);
-  background-size: cover;
+/* Body Background */
+html body {
+  background-color: var(--dracula-orchid);
+}
+
+/* Links */
+.inline-link {
+  text-decoration: none;
+  background-color: var(--dracula-orchid);
+  /* border-radius: 5px; */
+  /* mix-blend-mode: multiply; */
+  color: var(--solitary-state);
+  mix-blend-mode: difference;
+}
+.social-link {
+  text-decoration: none;
+  color: var(--white-chalk)
+}
+
+
+/* Popovers */
+.copy-popover {
+  --bs-popover-max-width: 200px !important;
+  --bs-popover-header-bg: var(--rocky-creek) !important;
+  --bs-popover-header-color: var(--white-chalk) !important;
+  --bs-popver-bg: var(--sassafras-tea) !important;
+  --bs-popover-body-color: var(--mud-ball) !important;  
+}
+.portrait-popover {
+  --bs-popover-max-width: 300px !important;
+  --bs-popover-header-bg: var(--rocky-creek) !important;
+  --bs-popover-header-color: var(--white-chalk) !important;
+  --bs-popover-bg: var(--rocky-creek) !important;
+  --bs-popover-body-color: var(--mud-ball) !important;  
+}
+
+
+
+/* Sections */
+section {
+  /* position: relative; */
   background-position: 50%;
-  filter: grayscale(60%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* theme-color */
-
-
-
-
-.bg-green {
-  background-color: #475855;
+/* Hero Section */
+#hero {
+  background-image: url(/assets/images/layered-peaks-haikei-top.svg);
 }
-.bg-tech-react {
-  background-color: #61DBFB;
+
+/* About Section */
+#about {
+  background-image: url(/assets/images/blob-haikei.svg);
+  position: relative;
 }
-.bg-tech-dotnet {
-  background-color: #5c2d91;
+#about p {
+  color: var(--white-chalk);  
+  mix-blend-mode: difference;
+}
+/* #about::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #355f08;
+  mix-blend-mode: multiply;
+} */
+
+
+/* Skills Section */
+#skills {
+  background-image: url(/assets/images/blob-scene-haikei.svg);
+}
+#skills p {
+  color: var(--white-chalk);  
+  mix-blend-mode: difference;
+}
+
+/* Projects Section */
+#projects {
+  background-image: url(/assets/images/stacked-peaks-haikei.svg);
+}
+#projects .card-text {
+  font-size: 0.8em;
+}
+#projects .card-footer {
+  background-color: var(--solitary-state) !important;
+}
+#projects .card-footer .badge {
+  background-color: var(--dracula-orchid);
+}
+
+
+/* Contact Section */
+#contact {
+  background-image: url(/assets/images/blob-scatter-haikei.svg);
+}
+#contact .fa-copy {
+  mix-blend-mode: difference;
 }
