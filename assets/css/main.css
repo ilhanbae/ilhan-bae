@@ -82,14 +82,35 @@ html body {
 .inline-link {
   text-decoration: none;
   background-color: var(--dracula-orchid);
-  /* border-radius: 5px; */
-  /* mix-blend-mode: multiply; */
   color: var(--solitary-state);
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
+}
+.inline-link:hover {
+  color: var(--sassafras-tea)
 }
 .social-link {
   text-decoration: none;
-  color: var(--white-chalk)
+  color: var(--white-chalk);
+}
+.social-link:hover {
+  color: var(--sassafras-tea)
+}
+
+
+/* Badges */
+.badge {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.badge-link {
+  text-decoration: none;
+  font-size: 1em !important;
+  font-weight: 200 !important;
+}
+.badge-link:hover {
+  color: var(--sassafras-tea)
 }
 
 
@@ -105,11 +126,21 @@ html body {
   --bs-popover-max-width: 300px !important;
   --bs-popover-header-bg: var(--rocky-creek) !important;
   --bs-popover-header-color: var(--white-chalk) !important;
-  --bs-popover-bg: var(--rocky-creek) !important;
+  --bs-popover-bg: var(--dracula-orchid) !important;
   --bs-popover-body-color: var(--mud-ball) !important;  
 }
 
 
+/* Cards */
+.card {
+  border: none !important;
+}
+/* .card-img-top {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  object-fit: 100%;
+} */
 
 /* Sections */
 section {
@@ -118,6 +149,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 /* Hero Section */
 #hero {
@@ -155,6 +187,10 @@ section {
 #projects {
   background-image: url(/assets/images/stacked-peaks-haikei.svg);
 }
+#projects p {
+  color: var(--white-chalk);  
+  mix-blend-mode: difference;
+}
 #projects .card-text {
   font-size: 0.8em;
 }
@@ -170,6 +206,6 @@ section {
 #contact {
   background-image: url(/assets/images/blob-scatter-haikei.svg);
 }
-#contact .fa-copy {
+#contact span {
   mix-blend-mode: difference;
 }
