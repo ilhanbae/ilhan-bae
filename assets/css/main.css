@@ -86,7 +86,7 @@ html body {
   /* mix-blend-mode: difference; */
 }
 .inline-link:hover {
-  color: var(--sassafras-tea)
+  color: var(--white-chalk)
 }
 .social-link {
   text-decoration: none;

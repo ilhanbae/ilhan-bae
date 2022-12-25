@@ -23,6 +23,12 @@ const popoverList = [...popoverTriggerList].map(
     })
 );
 
+// Change tooltip title by manipulating Popper
+function changeTooltipTitle(tooltip, newTitle) {
+  tooltipList.find((tt) => tt._element.id == tooltip.id)._config.title =
+    newTitle;
+}
+
 // Collapse responsive nav after link is clicked
 $(".js-scroll-trigger").click(function () {
   $(".navbar-collapse").collapse("hide");
@@ -35,4 +41,10 @@ $("#copy-email-button").click(function () {
   $temp.val($("#contact-email").text()).select();
   document.execCommand("copy");
   $temp.remove();
+
+  // change tooltip title
+  var original_title = $(this).attr("data-bs-title");
+  changeTooltipTitle(this, "Copied!");
+  $(this).tooltip("show");
+  changeTooltipTitle(this, original_title);
 });

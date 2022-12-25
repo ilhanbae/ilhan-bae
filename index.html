@@ -58,8 +58,8 @@
     <main class="" data-bs-spy="scroll" data-bs-target="#navbar">
       
       <!-- Hero Section -->
-      <section class="hero d-flex flex-column justify-content-center p-5 my-5 min-vh-100 shadow" id="hero" >
-        <div class="container text-light shadow">
+      <section class="d-flex flex-column justify-content-center min-vh-100 my-5 shadow" id="hero" >
+        <div class="container py-5 text-light rounded-3 shadow">
           <h1>Hello, I'm Ilhan Bae.</h1>
           <h3>I enjoy creating reliable tools that are fun and easy to use.</h3>
         </div>
@@ -68,11 +68,11 @@
 
 
       <!-- About Section -->
-      <section class="py-5 my-5 min-vh-100 d-flex flex-column justify-content-center shadow" id="about">
-
-        <div class="container shadow">
+      <section class="d-flex flex-column justify-content-center min-vh-100 my-5 shadow" id="about">
+        <div class="container py-5 rounded-3 shadow">
           
-          <h3 class="text-light">About Me</h3>        
+          <h3 class="text-light">About Me</h3>
+          <br>
           <p>
             I am currenlty a Junior studying Computer Science at State University of New York at Buffalo. My focus of study is Software Systems and Artificial Intelligence. 
           </p>
@@ -86,26 +86,25 @@
           </p>
 
         </div>
-
       </section>
 
 
       <!-- Project Section -->
-      <section class="min-vh-100 py-5 my-5 d-flex flex-column justify-content-center shadow" id="projects" >
+      <section class="d-flex flex-column justify-content-center min-vh-100 my-5 shadow" id="projects" >
+        <div class="container py-5 rounded-3 shadow">
 
-        <div class="container shadow">
           <h3 class="text-light">Projects</h3>
+          <br>
+
           <p>More projects work in progress...</p>
 
-          <div class="row shadow">
+          <div class="row">
           
             <!-- Project 1 -->
             <div class="col-sm-6 col-md-4">
-              
               <div class="card">
                 <!-- Card Image -->
                 <img class="card-img-top" src="/assets/images/PixelCiv.png" alt="PixelCiv Project image">
-
                 <!-- Card Body -->
                 <div class="card-body bg-st">
                   <div class="d-flex card-title justify-content-between">
@@ -125,7 +124,6 @@
                     Immersive Masive Multiplyer Onlince Game (MMO) inspired by Sid Meier's Civilization.  
                   </span>
                 </div>
-
                 <!-- Card Footer -->
                 <div class="card-footer">
                   <span class="badge badge-pill">Node.js</span>
@@ -134,22 +132,21 @@
                   <span class="badge badge-pill">Electron.js</span>
                 </div>
               </div>
-
             </div>
             
           </div>
-        </div>
 
+        </div>
       </section>
 
 
 
       <!-- contact section -->
-      <section class="min-vh-100 py-5 mt-5 d-flex flex-column justify-content-center shadow" id="contact">
-        
-        <div class="container shadow text-light">
+      <section class="d-flex flex-column justify-content-center min-vh-100 mt-5 shadow" id="contact">
+        <div class="container py-5 text-light rounded-3 shadow">
 
           <h3>Get in touch</h3>
+          <br>
           
           <!-- Email -->
           <span>I can be reached via email:</span>
@@ -160,7 +157,11 @@
               neil.han.bae@gmail.com
             </a>
             <!-- Copy Email Button  -->
-            <div class="badge badge-link bg-do py-3 px-3 rounded-3" id="copy-email-button" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-custom-class="copy-popover" data-bs-placement="top" data-bs-content="Copied" tabindex="0" >
+            <!-- <div class="badge badge-link bg-do py-3 px-3 rounded-3" id="copy-email-button" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-custom-class="copy-popover" data-bs-placement="top" data-bs-content="Copied" tabindex="0" >
+              <i class="fa-regular fa-copy"></i>
+            </div> -->
+
+            <div class="badge badge-link bg-do py-3 px-3 rounded-3" id="copy-email-button" role="button" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" data-bs-title="Copy to Clipboard" >
               <i class="fa-regular fa-copy"></i>
             </div>
             
@@ -184,7 +185,6 @@
           </div>
 
         </div>
-        
       </section>
 
     </main>
@@ -192,15 +192,19 @@
 
 
     <!-- Footer Contents -->
-    <footer class="d-flex justify-content-between align-items-center py-2 px-3 fixed-bottom bg-do shadow">
+    <footer class="d-flex justify-content-between align-items-center p-3 fixed-bottom bg-do shadow">
 
-      <a class="inline-link" href="/assets/ILHAN_BAE_Resume.pdf" target="_blank" >
+      <a class="badge badge-link" href="/ILHAN_BAE_Resume.pdf" target="_blank" >
+        <i class="fa-regular fa-file"></i>
         <span>Resume</span>
       </a>
-      <span class="text-light">© 2022 <a class="inline-link" role="button" data-bs-custom-class="portrait-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-title="<span>Ilhan Bae (b. 2000) <br/> Self Portrait, 2018 <br/> Oil pastel on canvas</span>" data-bs-content="<image src='/assets/images/self-portrait.jpg' class='img-thumbnail rounded-3'>" tabindex="0">Ilhan Bae</a> </span>
+      <span class="text-light">
+        © 2022 
+        <a class="inline-link" role="button" data-bs-custom-class="portrait-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-title="<span>Ilhan Bae (b. 2000) <br> Self Portrait, 2018 <br> Oil pastel on canvas</span>" data-bs-content="<image src='/assets/images/self-portrait.jpg' class='img-thumbnail rounded-3'>" tabindex="0">
+          Ilhan Bae
+        </a>
+      </span>
 
-
-        <!-- <p class="text-light">© 2022 <a class="inline-link role="button" data-bs-custom-class="portrait-popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-title="Self Portrait | Oil Pastel on Canvas" data-bs-content="hi" tabindex="0">Ilhan Bae</a> </p> -->
     </footer>
 
   </div>
