@@ -113,21 +113,23 @@ html body {
   color: var(--sassafras-tea)
 }
 
+/* Tooltips */
+.clipboard-tooltip {
+  --bs-tooltip-max-width: 200px !important;
+  /* --bs-toolip-header-bg: var(--rocky-creek) !important;
+  --bs-tooltip-header-color: var(--white-chalk) !important; */
+  --bs-tooltip-bg: var(--dracula-orchid) !important;
+  --bs-tooltip-color: var(--sassafras-tea) !important;  
+}
+
 
 /* Popovers */
-.copy-popover {
-  --bs-popover-max-width: 200px !important;
-  --bs-popover-header-bg: var(--rocky-creek) !important;
-  --bs-popover-header-color: var(--white-chalk) !important;
-  --bs-popver-bg: var(--sassafras-tea) !important;
-  --bs-popover-body-color: var(--mud-ball) !important;  
-}
 .portrait-popover {
   --bs-popover-max-width: 300px !important;
-  --bs-popover-header-bg: var(--rocky-creek) !important;
+  --bs-popover-header-bg: var(--dracula-orchid) !important;
   --bs-popover-header-color: var(--white-chalk) !important;
   --bs-popover-bg: var(--dracula-orchid) !important;
-  --bs-popover-body-color: var(--mud-ball) !important;  
+  --bs-popover-body-color: var(--sassafras-tea) !important;  
 }
 
 
