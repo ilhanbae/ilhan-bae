@@ -155,17 +155,20 @@ section {
 
 /* Hero Section */
 #hero {
-  background-image: url(/assets/images/layered-peaks-haikei-top.svg);
+  background-image: url(/assets/images/haikei/layered-peaks-haikei-top.svg);
 }
 
 /* About Section */
 #about {
-  background-image: url(/assets/images/blob-haikei.svg);
+  background-image: url(/assets/images/haikei/blob-haikei.svg);
   position: relative;
 }
-#about p {
+#about p, ul, table {
   color: var(--white-chalk);  
   mix-blend-mode: difference;
+}
+#about table {
+  color: var(--white-chalk);  
 }
 /* #about::after {
   content: '';
@@ -178,7 +181,7 @@ section {
 
 /* Skills Section */
 #skills {
-  background-image: url(/assets/images/blob-scene-haikei.svg);
+  background-image: url(/assets/images/haikei/blob-scene-haikei.svg);
 }
 #skills p {
   color: var(--white-chalk);  
@@ -187,7 +190,7 @@ section {
 
 /* Projects Section */
 #projects {
-  background-image: url(/assets/images/stacked-peaks-haikei.svg);
+  background-image: url(/assets/images/haikei/stacked-peaks-haikei.svg);
 }
 #projects p {
   color: var(--white-chalk);  
@@ -206,7 +209,7 @@ section {
 
 /* Contact Section */
 #contact {
-  background-image: url(/assets/images/blob-scatter-haikei.svg);
+  background-image: url(/assets/images/haikei/blob-scatter-haikei.svg);
 }
 #contact span {
   mix-blend-mode: difference;
