@@ -14,8 +14,10 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <!-- Bootstrap CSS v5.2.3 -->
   <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome CSS v6.2.1 CSS-->
+  <!-- Font Awesome CSS v6.2.1 -->
   <link rel="stylesheet" href="/assets/vendor/font-awesome/css/fontawesome.min.css">
+  <!-- Splide CSS v4.1.2-->
+  <link rel="stylesheet" href="/assets/vendor/splide/css/splide.min.css">
 </head>
 
 <body>
@@ -40,9 +42,6 @@
           <li class="nav-item" >
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
@@ -58,9 +57,9 @@
     <main class="" data-bs-spy="scroll" data-bs-target="#navbar">
       
       <!-- Hero Section -->
-      <section class="d-flex flex-column justify-content-center min-vh-100 my-5 shadow" id="hero" >
-        <div class="container py-5 text-light rounded-3 shadow">
-          <h1>Hello, I'm Ilhan Bae.</h1>
+      <section class="container d-flex justify-content-center align-items-center min-vh-100 my-5 rounded-3 shadow" id="hero">
+        <div class="col-6 text-light text-center">
+          <h1>Hello, I'm Ilhan</h1>
           <h3>I enjoy creating reliable tools that are fun and easy to use.</h3>
         </div>
       </section>
@@ -68,141 +67,252 @@
 
 
       <!-- About Section -->
-      <section class="d-flex flex-column justify-content-center min-vh-100 my-5 shadow" id="about">
-        <div class="container py-5 rounded-3 shadow">
-          
-          <h3 class="text-light">About Me</h3>
-          <br>
-          <p>
-            I'm currenlty a junior year student at State University of New York at Buffalo pursing a degree in Computer Science. My focus of study is Software Engineering and Artificial Intelligence. I'm interested in designing spatial analysis and industrial automation tools.
-          </p>
-          
-          <p>
-            I have experiences building web and desktop applications with the following technologies:
-          </p>
-
-          <div class="d-flex gap-3 justify-content-center">
-            <ul class="col-sm-3  rounded">
-              <li>React</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-              <li>HTML/CSS</li>
-            </ul>
-            <ul class="col-sm-3  rounded">
-              <li>.Net Core</li>
-              <li>ASP.NET</li>
-              <li>Web API</li>
-              <li>MS SQL Server</li>
-            </ul>
-            <ul class="col-sm-3 rounded">
-              <li>Git</li>
-              <li>Figma</li>
-              <li>Visual Studio</li>
-              <li>...Many more</li>
-            </ul>
+      <section class="container min-vh-100 my-5 rounded-3 shadow px-3" id="about">
+        <!-- Section Title -->
+        <h1 class="text-light pt-5 pb-3">About Me</h1>
+        <!-- Section Contents -->
+        <div class="">
+          <!-- Summary -->
+          <div class="col-sm-6 ">
+            <p>
+              I'm currently a junior year student at the State University of New York at Buffalo pursuing a bachelor of science degree in Computer Science. I'm passionate about designing interactive tools that are reliable and fun for everyday use.
+            </p>
+            <p>
+              I'm actively seeking opportunities to join a company or a team that aims to solve global sustainability problems. I'm currently learning ways to contribute through spatial analysis and industrial automation.
+            </p>
           </div>
-          
-          <p>  
-            See all my projects on <a class="inline-link" href="https://github.com/Northbase" target="_blank">Github</a> and my full work history at <a class="inline-link" href="https://www.linkedin.com/in/neilbae/" target="_blank">LinkedIn</a>.
-          </p>
-
+  
+          <!-- Skills -->
+          <div class="col-sm-6 ">
+            <p>
+              I have experience building web and desktop applications with the following technologies:
+            </p>
+            
+            <div class="d-flex gap-3 justify-content-center" id="skills-table">
+              <ul class="col-sm-4 bg-mb rounded">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>HTML/CSS</li>
+              </ul>
+              <ul class="col-sm-4 bg-mb rounded">
+                <li>.Net Core</li>
+                <li>ASP.NET</li>
+                <li>Web API</li>
+                <li>MS SQL Server</li>
+              </ul>
+              <ul class="col-sm-4 bg-mb rounded">
+                <li>Git</li>
+                <li>Figma</li>
+                <li>Visual Studio</li>
+                <li>Trello</li>
+              </ul>
+            </div>
+            
+            <p>  
+              See all my projects on <a class="inline-link" href="https://github.com/Northbase" target="_blank">Github</a> and my full work history at <a class="inline-link" href="https://www.linkedin.com/in/neilbae/" target="_blank">LinkedIn</a>.
+            </p>  
+          </div>
         </div>
+
       </section>
 
 
+     
       <!-- Project Section -->
-      <section class="d-flex flex-column justify-content-center min-vh-100 my-5 shadow" id="projects" >
-        <div class="container py-5 rounded-3 shadow">
+      <section class="container min-vh-100 my-5 rounded-3 shadow px-3" id="projects">
+        <!-- Section Title -->
+        <h1 class="text-light pt-5 pb-3">Projects</h1>
+        <!-- Section Contents -->
+        <div class="splide">
+          <div class="splide__track">
+            <div class="splide__list">
 
-          <h3 class="text-light">Projects</h3>
-          <br>
+              <!-- Project One -->
+              <div class="splide__slide">
+                <div class="card h-100">
+                  <!-- Card Image -->
+                  <img class="card-img-top" src="/assets/images/illustrations/ice-climber.jpg" alt="Detailed graphite on paper drawing of crumpled-paper">
+                  <!-- Card Body -->
+                  <div class="card-body bg-st">
+                    <div class="d-flex card-title justify-content-between">
+                      <!-- Card Body Title -->
+                      <h5>PixelCiv</h5>
+                      <div class="d-flex flex-row gap-2">
+                        <a class="nav-link" href="https://github.com/Northbase/PixelCiv" target="_blank">
+                          <i class="fa-sharp fa-solid fa-code"></i>
+                        </a>
+                        <a class="nav-link" href="https://github.com/Northbase/PixelCiv" target="_blank">
+                          <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Card Body Text -->
+                    <span class="card-text">
+                      2D Masive Multiplyer Onlince Game (MMO) inspired by Sid Meier's Civilization.  
+                    </span>
+                  </div>
+                  <!-- Card Footer -->
+                  <div class="card-footer">
+                    <span class="badge badge-pill">Node.js</span>
+                    <span class="badge badge-pill">Scala</span>
+                    <span class="badge badge-pill">Pixi.js</span>
+                    <span class="badge badge-pill">Electron.js</span>
+                    <span class="badge badge-pill">MySQL</span>
+                  </div>
+                </div>
+              </div>
 
-          <p>More projects work in progress...</p>
+              <!-- Project Two -->
+              <div class="splide__slide">
+                <div class="card h-100">
+                  <!-- Card Image -->
+                  <img class="card-img-top" src="/assets/images/illustrations/baggage-carousel.jpg" alt="Oil on canvas drawing of Baggage Claim Area">
+                  <!-- Card Body -->
+                  <div class="card-body bg-st">
+                    <div class="d-flex card-title justify-content-between">
+                      <!-- Card Body Title -->
+                      <h5>Bug Tracker (WIP)</h5>
+                      <div class="d-flex flex-row gap-2">
+                        <a class="nav-link disabled" href="" target="_blank" >
+                          <i class="fa-sharp fa-solid fa-code"></i>
+                        </a>
+                        <a class="nav-link disabled" href="" target="_blank">
+                          <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Card Body Text -->
+                    <span class="card-text">
+                      Ticket-based bug tracker web app with interactive dashboard.
+                    </span>
+                  </div>
+                  <!-- Card Footer -->
+                  <div class="card-footer">
+                    <span class="badge badge-pill">Blazor</span>
+                    <span class="badge badge-pill">ASP.NET Core</span>
+                    <span class="badge badge-pill">C#</span>
+                    <span class="badge badge-pill">SQL</span>
+                  </div>
+                </div>
+              </div>
 
-          <div class="row">
-          
-            <!-- Project 1 -->
-            <div class="col-sm-6 col-md-4">
-              <div class="card">
+              <!-- Project Three -->
+              <div class="splide__slide">
+                <div class="card h-100">
+                  <!-- Card Image -->
+                  <img class="card-img-top" src="/assets/images/illustrations/wood-leaf.jpg" alt="Colored pencil on paper drawing of a sapling emerging out of tree trunk">
+                  <!-- Card Body -->
+                  <div class="card-body bg-st">
+                    <!-- Card Body Title -->
+                    <div class="d-flex card-title justify-content-between">
+                      <h5>Gardening Dashboard (WIP)</h5>
+                      <div class="d-flex flex-row gap-2">
+                        <a class="nav-link disabled" href="" target="_blank">
+                          <i class="fa-sharp fa-solid fa-code"></i>
+                        </a>
+                        <a class="nav-link disabled" href="" target="_blank">
+                          <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Card Body Text -->
+                    <span class="card-text">
+                      Crop soil moisture monitoring IoT Web app.
+                    </span>
+                  </div>
+                  <!-- Card Footer -->
+                  <div class="card-footer">
+                    <span class="badge badge-pill">Arduino</span>
+                    <span class="badge badge-pill">C++</span>
+                    <span class="badge badge-pill">MySQL</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Four -->
+              <div class="splide__slide">
+              <div class="card h-100">
                 <!-- Card Image -->
-                <img class="card-img-top" src="/assets/images/projects/Pixel_Civ_Clip.gif" alt="PixelCiv Project image">
+                <img class="card-img-top" src="/assets/images/illustrations/small-box.jpg" alt="Colored pencil on paper drawing of a abandoned wooden cabin">
                 <!-- Card Body -->
                 <div class="card-body bg-st">
+                  <!-- Card Body Title -->
                   <div class="d-flex card-title justify-content-between">
-                    <!-- Card Title -->
-                    <h5>PixelCiv</h5>
+                    <h5>Musical Diorama Box (WIP)</h5>
                     <div class="d-flex flex-row gap-2">
-                      <a class="nav-link" href="https://github.com/Northbase/PixelCiv" target="_blank">
+                      <a class="nav-link disabled" href="" target="_blank">
                         <i class="fa-sharp fa-solid fa-code"></i>
                       </a>
-                      <a class="nav-link" href="https://github.com/Northbase/PixelCiv" target="_blank">
+                      <a class="nav-link disabled" href="" target="_blank">
                         <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                   </div>
-                  <!-- Card Text -->
+                  <!-- Card Body Text -->
                   <span class="card-text">
-                    Immersive Masive Multiplyer Onlince Game (MMO) inspired by Sid Meier's Civilization.  
+                    Immersive musical experience on web.
                   </span>
                 </div>
                 <!-- Card Footer -->
                 <div class="card-footer">
-                  <span class="badge badge-pill">Node.js</span>
-                  <span class="badge badge-pill">Scala</span>
-                  <span class="badge badge-pill">Pixi.js</span>
-                  <span class="badge badge-pill">Electron.js</span>
+                  <span class="badge badge-pill">Unity</span>
+                  <span class="badge badge-pill">C#</span>
                 </div>
               </div>
             </div>
-            
-          </div>
 
+
+              
+            </div>
+          </div>
         </div>
       </section>
 
 
-
+      
       <!-- contact section -->
-      <section class="d-flex flex-column justify-content-center min-vh-100 mt-5 shadow" id="contact">
-        <div class="container py-5 text-light rounded-3 shadow">
-
-          <h3>Get in touch</h3>
-          <br>
-          
+      <section class="container min-vh-100 mb-5 rounded-3 shadow text-light" id="contact">
+        <!-- Section Title -->
+        <h1 class="text-light pt-5 pb-3">Get in touch</h1>
+        <!-- Section Contents -->
+        <div class="min-vh-100 d-flex flex-column justify-content-center align-items-center d-grid gap-5">
           <!-- Email -->
-          <span>I can be reached via email:</span>
-          <div class="container py-3 gap-3 d-flex justify-content-center bg-rc rounded-3">
-            
-            <!-- Email Address -->
-            <a href="mailto:neil.han.bae@gmail.com" class="badge badge-link bg-do py-3 md-px-5 col-9 rounded-3" id="contact-email">
-              neil.han.bae@gmail.com
-            </a>
-
-            <!-- Copy Email Button  -->
-            <div class="badge badge-link bg-do py-3 px-3 rounded-3 d-none d-md-block" id="copy-email-button" role="button" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-custom-class="clipboard-tooltip" data-bs-placement="top" data-bs-title="Copy to Clipboard" >
-              <i class="fa-regular fa-copy"></i>
+          <div class="row col-md-6 px-3">
+            <span>I can be reached via email:</span>
+            <div class="container py-3 gap-3 d-flex justify-content-center bg-rc rounded-3">
+              
+              <!-- Email Address -->
+              <a href="mailto:neil.han.bae@gmail.com" class="badge badge-link bg-do py-3 md-px-5 col-9 rounded-3" id="contact-email">
+                neil.han.bae@gmail.com
+              </a>
+  
+              <!-- Copy Email Button  -->
+              <div class="badge badge-link bg-do py-3 px-3 rounded-3 d-none d-md-block" id="copy-email-button" role="button" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-custom-class="clipboard-tooltip" data-bs-placement="top" data-bs-title="Copy to Clipboard" >
+                <i class="fa-regular fa-copy"></i>
+              </div>
+              
             </div>
-            
           </div>
-
-          <br>
-
+  
           <!-- Social -->
-          <span>or can be found on socials:</span>
-          <div class="container py-3 gap-3 d-flex justify-content-center bg-rc rounded-3">
-           
-            <a class="badge badge-link bg-do p-3 bg-do rounded-3" href="https://www.linkedin.com/in/neilbae/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-              Linkedin
-            </a>
-            <a class="badge badge-link bg-do p-3 bg-do rounded-3" href="https://github.com/Northbase" target="_blank">
-              <i class="fa-brands fa-github"></i>
-              Github
-            </a>
-
+          <div class="row col-md-6 px-3">
+            <span>or can be found on socials:</span>
+            <div class="container py-3 gap-3 d-flex justify-content-center bg-rc rounded-3">
+              
+              <a class="badge badge-link bg-do p-3 bg-do rounded-3" href="https://www.linkedin.com/in/neilbae/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                Linkedin
+              </a>
+              <a class="badge badge-link bg-do p-3 bg-do rounded-3" href="https://github.com/Northbase" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                Github
+              </a>
+  
+            </div>
           </div>
-
         </div>
+
       </section>
 
     </main>
@@ -218,7 +328,7 @@
       </a>
       <span class="text-light">
         © 2023 
-        <a class="inline-link" role="button" data-bs-custom-class="portrait-popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-title="<span>Ilhan Bae (b. 2000) <br> Self Portrait, 2018 <br> Oil pastel on canvas</span>" data-bs-content="<image src='/assets/images/illustrations/self-portrait.jpg' class='img-thumbnail rounded-3'>" tabindex="0" href="/assets/images/illustrations/self-portrait.jpg" target="_blank">
+        <a class="inline-link" role="button" data-bs-custom-class="portrait-popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-title="<span>Ilhan Bae (b. 2000) <br> Self Portrait, 2018 <br> Oil pastel on canvas</span>" data-bs-content="<image class='img-thumbnail rounded-3' src='/assets/images/illustrations/self-portrait.jpg' alt='Oil pastel on canvas drawing of my self portrait'>" tabindex="0" href="/assets/images/illustrations/self-portrait.jpg" target="_blank">
           Ilhan Bae
         </a>
       </span>
@@ -229,10 +339,12 @@
 
 
   
-  <!-- Bootstrap JS v.5.2.3 -->
+  <!-- Bootstrap JS v5.2.3 -->
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- jQuery JS v.3.6.2 -->
+  <!-- jQuery JS v3.6.2 -->
   <script src="/assets/vendor/jquery/jquery-3.6.2.min.js"></script>
+  <!-- Splide JS v4.1.2-->
+  <script src="/assets/vendor/splide/js/splide.min.js"></script>
   <!-- Custom Script -->
   <script src="/assets/js/main.js"></script>
 </body>

@@ -80,10 +80,11 @@ html body {
 
 /* Links */
 .inline-link {
-  text-decoration: none;
-  background-color: var(--dracula-orchid);
-  color: var(--solitary-state);
+  /* text-decoration: none; */
+  /* background-color: var(--dracula-orchid); */
   /* mix-blend-mode: difference; */
+  /* color: var(--white-chalk); */
+  color: var(--solitary-state);
 }
 .inline-link:hover {
   color: var(--white-chalk)
@@ -116,8 +117,6 @@ html body {
 /* Tooltips */
 .clipboard-tooltip {
   --bs-tooltip-max-width: 200px !important;
-  /* --bs-toolip-header-bg: var(--rocky-creek) !important;
-  --bs-tooltip-header-color: var(--white-chalk) !important; */
   --bs-tooltip-bg: var(--dracula-orchid) !important;
   --bs-tooltip-color: var(--sassafras-tea) !important;  
 }
@@ -137,12 +136,11 @@ html body {
 .card {
   border: none !important;
 }
-/* .card-img-top {
+.card-img-top {
   width: 100%;
-  height: 20vh;
+  height: 40vh;
   object-fit: cover;
-  object-fit: 100%;
-} */
+}
 
 /* Sections */
 section {
@@ -152,24 +150,23 @@ section {
   background-size: cover;
 }
 
-
 /* Hero Section */
 #hero {
-  background-image: url(/assets/images/haikei/layered-peaks-haikei-top.svg);
+  background-image: url("/assets/images/haikei/layered-peaks-haikei-top.svg");
 }
+
 
 /* About Section */
 #about {
-  background-image: url(/assets/images/haikei/blob-haikei.svg);
+  background-image: url("/assets/images/haikei/blob-haikei.svg");
   position: relative;
 }
-#about p, ul, table {
+#about p, ul {
   color: var(--white-chalk);  
   mix-blend-mode: difference;
 }
-#about table {
-  color: var(--white-chalk);  
-}
+
+/* Filters Test */
 /* #about::after {
   content: '';
   position: absolute;
@@ -179,18 +176,9 @@ section {
 } */
 
 
-/* Skills Section */
-#skills {
-  background-image: url(/assets/images/haikei/blob-scene-haikei.svg);
-}
-#skills p {
-  color: var(--white-chalk);  
-  mix-blend-mode: difference;
-}
-
 /* Projects Section */
 #projects {
-  background-image: url(/assets/images/haikei/stacked-peaks-haikei.svg);
+  background-image: url("/assets/images/haikei/blob-scene-haikei.svg");
 }
 #projects p {
   color: var(--white-chalk);  
@@ -209,7 +197,7 @@ section {
 
 /* Contact Section */
 #contact {
-  background-image: url(/assets/images/haikei/blob-scatter-haikei.svg);
+  background-image: url("/assets/images/haikei/blob-scatter-haikei.svg");
 }
 #contact span {
   mix-blend-mode: difference;

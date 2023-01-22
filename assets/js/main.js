@@ -48,3 +48,41 @@ $("#copy-email-button").click(function () {
   $(this).tooltip("show");
   changeTooltipTitle(this, original_title);
 });
+
+
+// Init Splide Carousel
+document.addEventListener( 'DOMContentLoaded', function() {
+  var projectsCarousel = new Splide('.splide', {
+    perPage: 3,
+    perMove: 1,
+    gap: '1em',
+    focus: 'center',
+    trimSpace: false,
+    breakpoints: {
+      // sm (≤ 576px)
+      576: {
+        perPage: 1,
+        arrows: false
+      },
+      // md (≤ 576px)
+      768: {
+        perPage: 2,
+        arrows: false
+      },
+      // lg (≤ 576px)
+      992: {
+        perPage: 3
+      },
+      // xl (≤ 576px)
+      1200: {
+        perPage: 4
+      },
+      // xxl (≤ 1400px)
+      1400: {
+        perPage: 5
+      }
+    }
+  });
+
+  projectsCarousel.mount()
+});
