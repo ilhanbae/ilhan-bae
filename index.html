@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div>
+  <div class="jumbotron">
     
     <!-- Navbar Contents -->
     <nav class="navbar navbar-expand-md fixed-top py-1 px-3 navbar-dark bg-do shadow" id="navbar">
@@ -67,7 +67,7 @@
 
 
       <!-- About Section -->
-      <section class="container min-vh-100 my-5 rounded-3 shadow px-3" id="about">
+      <section class="container min-vh-100 my-5 py-5 rounded-3 shadow px-3" id="about">
         <!-- Section Title -->
         <h1 class="text-light pt-5 pb-3">About Me</h1>
         <!-- Section Contents -->
@@ -120,7 +120,7 @@
 
      
       <!-- Project Section -->
-      <section class="container min-vh-100 my-5 rounded-3 shadow px-3" id="projects">
+      <section class="container min-vh-100 my-5 py-5 rounded-3 shadow px-3" id="projects">
         <!-- Section Title -->
         <h1 class="text-light pt-5 pb-3">Projects</h1>
         <!-- Section Contents -->
@@ -129,6 +129,39 @@
             <div class="splide__list">
 
               <!-- Project One -->
+              <div class="splide__slide">
+                <div class="card h-100">
+                  <!-- Card Image -->
+                  <img class="card-img-top" src="/assets/images/illustrations/bicameral-mind.jpg" alt="Colored pencil drawing of iconic bicameral mind">
+                  <!-- Card Body -->
+                  <div class="card-body bg-st">
+                    <div class="d-flex card-title justify-content-between">
+                      <!-- Card Body Title -->
+                      <h5>Trifora</h5>
+                      <div class="d-flex flex-row gap-2">
+                        <a class="nav-link" href="https://github.com/Northbase/TriFora" target="_blank" >
+                          <i class="fa-sharp fa-solid fa-code"></i>
+                        </a>
+                        <a class="nav-link" href="https://github.com/Northbase/TriFora" target="_blank">
+                          <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Card Body Text -->
+                    <span class="card-text">
+                      A college-based social media platform where students can find, connect, and build a community of their interest.
+                    </span>
+                  </div>
+                  <!-- Card Footer -->
+                  <div class="card-footer">
+                    <span class="badge badge-pill">React.js</span>
+                    <span class="badge badge-pill">Node.js</span>
+                    <span class="badge badge-pill">Figma</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Two -->
               <div class="splide__slide">
                 <div class="card h-100">
                   <!-- Card Image -->
@@ -162,107 +195,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Project Two -->
-              <div class="splide__slide">
-                <div class="card h-100">
-                  <!-- Card Image -->
-                  <img class="card-img-top" src="/assets/images/illustrations/baggage-carousel.jpg" alt="Oil on canvas drawing of Baggage Claim Area">
-                  <!-- Card Body -->
-                  <div class="card-body bg-st">
-                    <div class="d-flex card-title justify-content-between">
-                      <!-- Card Body Title -->
-                      <h5>Bug Tracker (WIP)</h5>
-                      <div class="d-flex flex-row gap-2">
-                        <a class="nav-link disabled" href="" target="_blank" >
-                          <i class="fa-sharp fa-solid fa-code"></i>
-                        </a>
-                        <a class="nav-link disabled" href="" target="_blank">
-                          <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- Card Body Text -->
-                    <span class="card-text">
-                      Ticket-based bug tracker web app with interactive dashboard.
-                    </span>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <span class="badge badge-pill">Blazor</span>
-                    <span class="badge badge-pill">ASP.NET Core</span>
-                    <span class="badge badge-pill">C#</span>
-                    <span class="badge badge-pill">SQL</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Three -->
-              <div class="splide__slide">
-                <div class="card h-100">
-                  <!-- Card Image -->
-                  <img class="card-img-top" src="/assets/images/illustrations/wood-leaf.jpg" alt="Colored pencil on paper drawing of a sapling emerging out of tree trunk">
-                  <!-- Card Body -->
-                  <div class="card-body bg-st">
-                    <!-- Card Body Title -->
-                    <div class="d-flex card-title justify-content-between">
-                      <h5>Gardening Dashboard (WIP)</h5>
-                      <div class="d-flex flex-row gap-2">
-                        <a class="nav-link disabled" href="" target="_blank">
-                          <i class="fa-sharp fa-solid fa-code"></i>
-                        </a>
-                        <a class="nav-link disabled" href="" target="_blank">
-                          <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- Card Body Text -->
-                    <span class="card-text">
-                      Crop soil moisture monitoring IoT Web app.
-                    </span>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <span class="badge badge-pill">Arduino</span>
-                    <span class="badge badge-pill">C++</span>
-                    <span class="badge badge-pill">MySQL</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Four -->
-              <div class="splide__slide">
-              <div class="card h-100">
-                <!-- Card Image -->
-                <img class="card-img-top" src="/assets/images/illustrations/small-box.jpg" alt="Colored pencil on paper drawing of a abandoned wooden cabin">
-                <!-- Card Body -->
-                <div class="card-body bg-st">
-                  <!-- Card Body Title -->
-                  <div class="d-flex card-title justify-content-between">
-                    <h5>Musical Diorama Box (WIP)</h5>
-                    <div class="d-flex flex-row gap-2">
-                      <a class="nav-link disabled" href="" target="_blank">
-                        <i class="fa-sharp fa-solid fa-code"></i>
-                      </a>
-                      <a class="nav-link disabled" href="" target="_blank">
-                        <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Card Body Text -->
-                  <span class="card-text">
-                    Immersive musical experience on web.
-                  </span>
-                </div>
-                <!-- Card Footer -->
-                <div class="card-footer">
-                  <span class="badge badge-pill">Unity</span>
-                  <span class="badge badge-pill">C#</span>
-                </div>
-              </div>
-            </div>
-
-
               
             </div>
           </div>
@@ -272,7 +204,7 @@
 
       
       <!-- contact section -->
-      <section class="container min-vh-100 mb-5 rounded-3 shadow text-light" id="contact">
+      <section class="container min-vh-100 mb-5 py-5 rounded-3 shadow text-light" id="contact">
         <!-- Section Title -->
         <h1 class="text-light pt-5 pb-3">Get in touch</h1>
         <!-- Section Contents -->
@@ -316,8 +248,6 @@
       </section>
 
     </main>
-
-
 
     <!-- Footer Contents -->
     <footer class="d-flex justify-content-between align-items-center p-3 fixed-bottom bg-do shadow">
